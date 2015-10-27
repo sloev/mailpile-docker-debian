@@ -1,0 +1,5 @@
+dockerfile for running mailpile in debian docker contiainer
+
+ive included a buildscript build.sh that mounts host:/var/mailpile to guest:/var/mailpile
+
+$ ./build.sh works
