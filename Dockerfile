@@ -24,5 +24,5 @@ RUN ./mp setup
 CMD ./mp --www=0.0.0.0:33411 --wait
 EXPOSE 33411
 
-VOLUME .local/share/Mailpile
-VOLUME .gnupg
+VOLUME /Mailpile/.local/share/Mailpile
+VOLUME /Mailpile/.gnupg
