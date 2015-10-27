@@ -21,8 +21,8 @@ RUN pip install -r requirements.txt
 # Initial Mailpile setup
 RUN ./mp setup
 
-CMD MAILPILE_HOME=/mailpile-data ./mp --www=0.0.0.0:33411 --wait
+CMD ./mp --www=0.0.0.0:33411 --wait
 EXPOSE 33411
 
-VOLUME /mailpile-data/.local/share/Mailpile
-VOLUME /mailpile-data/.gnupg
+VOLUME .local/share/Mailpile
+VOLUME .gnupg
